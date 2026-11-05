@@ -7,7 +7,7 @@ import {
   type ReactNode,
 } from "react";
 import { cn } from "../lib/cn";
-import scarlettPortrait from "../assets/avatars/santo.jpg";
+import santoPortrait from "../assets/avatars/santo.jpg";
 
 interface LanyardCardProps {
   children?: ReactNode;
@@ -289,7 +289,7 @@ function DefaultCard() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(#fff_1px,transparent_1px)] opacity-10 [background-size:12px_12px]" />
         <div className="group relative mt-1 h-28 w-28 overflow-hidden rounded-full border border-white/50 bg-gradient-to-tr from-cyan-400 via-primary to-purple-400 p-1 shadow-2xl backdrop-blur-md">
           <img
-            src={scarlettPortrait}
+            src={santoPortrait}
             alt="Santo J"
             className="h-full w-full rounded-full object-cover contrast-105 filter"
             loading="eager"
