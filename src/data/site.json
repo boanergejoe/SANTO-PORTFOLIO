@@ -1,0 +1,31 @@
+{
+  "name": "Santo",
+  "initials": "LS",
+  "role": "Software Engineer",
+  "specialty": "Full-Stack AI & UX",
+  "experience": "10+ Years",
+  "email": "3antos1@gmail.com",
+  "phone": "+250795757432",
+  "location": "Kigali, Rwanda",
+  "github": "https://github.com/boanergejoe",
+  "resumeSkills": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "GraphQL",
+    "Tailwind CSS",
+    "Framer Motion",
+    "MongoDB",
+    "PostgreSQL",
+    "AWS",
+    "Azure",
+    "Docker",
+    "Kubernetes",
+    "Redis",
+    "Figma",
+    "Redux"
+  ]
+}

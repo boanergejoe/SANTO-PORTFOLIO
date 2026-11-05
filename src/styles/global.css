@@ -1,0 +1,336 @@
+@import "tailwindcss";
+@import "@fontsource/geist-sans/latin-400.css";
+@import "@fontsource/geist-sans/latin-700.css";
+
+/*
+ * The reference build ships a weight-500 Geist face whose asset is missing,
+ * so browsers render weight-500/mono text with the generic sans-serif
+ * fallback instead of the weight-400 face. Register the same fallback
+ * metrics here to keep text widths pixel-identical without a 404 request.
+ */
+@font-face {
+  font-family: "Geist Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Arial"), local("Helvetica Neue"), local("Helvetica");
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-fg);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-fg);
+  --color-border: var(--border);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Values used by opacity variants (these mirror the reference cascade). */
+  --bg: #f8fafc;
+  --fg: #0f172a;
+  --card: 0 0% 100%;
+  --card-fg: #0f172a;
+  --muted: 0 0% 96%;
+  --muted-fg: #64748b;
+  --border: 0 0% 90%;
+
+  /* Lightswind design-system tokens used by the final reference styles. */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 0%;
+  --primary: 0 0% 0%;
+  --primary-foreground: 0 0% 100%;
+  --primarylw: #173eff;
+  --darklw: #11131b;
+  --darklw-2: #1a1d25;
+  --muted-foreground: 0 0% 45%;
+  --scrollbar-thumb: 0 0% 75%;
+  --scrollbar-track: 0 0% 95%;
+
+  --glass-bg: #ffffffb3;
+  --glass-border: #0000001a;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --bg: #0f1014;
+  --fg: #fafafa;
+  --card: 0 0% 5%;
+  --card-fg: #fafafa;
+  --muted: 0 0% 15%;
+  --muted-fg: #a1a1aa;
+  --border: 0 0% 30%;
+
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --muted-foreground: 0 0% 65%;
+  --scrollbar-thumb: 0 0% 25%;
+  --scrollbar-track: 0 0% 10%;
+
+  --glass-bg: #16171b99;
+  --glass-border: #ffffff0d;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--scrollbar-thumb)) hsl(var(--scrollbar-track));
+  font-family: "Geist Sans", sans-serif !important;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 0;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.dark body {
+  background-image: radial-gradient(circle at 100% 0, #8b5cf626, transparent 60%),
+    radial-gradient(circle at 0 100%, #0ea5e91a, transparent 50%);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::selection {
+  background-color: #8b5cf64d;
+}
+
+/* ------------------------------------------------------------------ */
+/* Glass + gradient utilities (unlayered so they win, as in reference) */
+/* ------------------------------------------------------------------ */
+.glass-panel {
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px #0000000d;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--fg) 0%, var(--muted-fg) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #a78bfa, #38bdf8);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* ------------------------------------------------------------------ */
+/* Final design-system overrides from the reference build              */
+/* ------------------------------------------------------------------ */
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  margin: 0;
+  padding: 0;
+}
+
+.border {
+  border-width: 1px;
+  border-color: hsl(var(--border));
+}
+
+.dark .border {
+  border-color: hsl(var(--border));
+}
+
+.text-background {
+  color: hsl(var(--background));
+}
+.bg-background {
+  background-color: hsl(var(--background));
+}
+.text-foreground {
+  color: hsl(var(--foreground));
+}
+.bg-foreground {
+  background-color: hsl(var(--foreground));
+}
+.text-card {
+  color: hsl(var(--card));
+}
+.bg-card {
+  background-color: hsl(var(--card));
+}
+.text-card-foreground {
+  color: hsl(var(--foreground));
+}
+.bg-card-foreground {
+  background-color: hsl(var(--foreground));
+}
+.text-primary {
+  color: hsl(var(--primary));
+}
+.bg-primary {
+  background-color: hsl(var(--primary));
+}
+.text-primary-foreground {
+  color: hsl(var(--primary-foreground));
+}
+.bg-primary-foreground {
+  background-color: hsl(var(--primary-foreground));
+}
+.text-muted {
+  color: hsl(var(--muted));
+}
+.bg-muted {
+  background-color: hsl(var(--muted));
+}
+.text-muted-foreground {
+  color: hsl(var(--muted-foreground));
+}
+.bg-muted-foreground {
+  background-color: hsl(var(--muted-foreground));
+}
+.text-border {
+  color: hsl(var(--border));
+}
+.bg-border {
+  background-color: hsl(var(--border));
+}
+
+.transition-colors {
+  transition:
+    background-color 0.4s,
+    color 0.4s;
+}
+
+/* ------------------------------------------------------------------ */
+/* Keyframes                                                          */
+/* ------------------------------------------------------------------ */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes aurora-1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  50% {
+    top: 100%;
+    right: 75%;
+  }
+  75% {
+    top: 100%;
+    right: 25%;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes aurora-2 {
+  0% {
+    top: -50%;
+    left: 0%;
+  }
+  60% {
+    top: 100%;
+    left: 75%;
+  }
+  85% {
+    top: 100%;
+    left: 25%;
+  }
+  100% {
+    top: -50%;
+    left: 0%;
+  }
+}
+
+@keyframes aurora-3 {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+  40% {
+    bottom: 100%;
+    left: 75%;
+  }
+  65% {
+    bottom: 40%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes aurora-4 {
+  0% {
+    bottom: -50%;
+    right: 0;
+  }
+  50% {
+    bottom: 0%;
+    right: 40%;
+  }
+  90% {
+    bottom: 50%;
+    right: 25%;
+  }
+  100% {
+    bottom: -50%;
+    right: 0;
+  }
+}
+
+@keyframes aurora-border {
+  0% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+  25% {
+    border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
+  }
+  50% {
+    border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
+  }
+  75% {
+    border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
+  }
+  100% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "name": "Santo",
+  "role": "Software Engineer",
+  "specialty": "Full-Stack AI & UX",
+  "location": "Kigali, Rwanda",
+  "email": "3antos1@gmail.com",
+  "phone": "+250 795 757 432",
+  "github": "https://github.com/boanergejoe",
+  "website": "lwportfolio01.muhilanorg.in",
+  "summary": "Product-minded software engineer and design leader with 10+ years of experience delivering accessible, high-performance digital products for global enterprises and startups. Combines deep full-stack expertise in React, Node.js and cloud-native systems with UI/UX leadership across the complete product lifecycle, from discovery and design systems to global deployment.",
+  "competencies": [
+    "Full-Stack Development",
+    "UI/UX Architecture",
+    "Performance Optimization",
+    "Systems Architecture",
+    "Design Systems",
+    "Product Leadership"
+  ],
+  "experience": [
+    {
+      "title": "Director of Product Engineering",
+      "company": "TechNova Global Solutions",
+      "period": "2024 – Present",
+      "bullets": [
+        "Lead a 200+ engineering organization across 5 continents, owning delivery from ideation to global deployment.",
+        "Introduced AI-driven development pipelines, reducing time-to-market by 38%.",
+        "Established enterprise-wide accessibility and sustainability design standards."
+      ]
+    },
+    {
+      "title": "Senior Principal Engineer & Design Strategist",
+      "company": "Innova Digital Labs",
+      "period": "2020 – 2024",
+      "bullets": [
+        "Architected scalable microservices for financial and healthcare products serving 20M+ active users.",
+        "Directed adoption of a unified design system across 12 product lines, increasing brand consistency and delivery speed by 50%.",
+        "Mentored 40+ senior engineers into leadership positions."
+      ]
+    },
+    {
+      "title": "Lead Full-Stack Developer",
+      "company": "Skyline Interactive",
+      "period": "2016 – 2020",
+      "bullets": [
+        "Spearheaded immersive web applications with React, GraphQL and Node.js for high-profile clients.",
+        "Reduced application load times by 70% through advanced performance optimization.",
+        "Introduced component-driven workflows that became the company's standard practice."
+      ]
+    },
+    {
+      "title": "Senior UI/UX Designer",
+      "company": "PixelForge Studios",
+      "period": "2012 – 2016",
+      "bullets": [
+        "Designed award-winning digital experiences for global brands, earning multiple Awwwards and Webby Awards.",
+        "Championed user-centered design by integrating continuous feedback loops into every sprint.",
+        "Unified visual and interaction design across cross-functional product teams."
+      ]
+    },
+    {
+      "title": "Frontend Developer & Interaction Designer",
+      "company": "CreativeSpark Agency",
+      "period": "2008 – 2012",
+      "bullets": [
+        "Built responsive, interactive marketing websites during the rise of mobile-first design.",
+        "Created high-conversion landing pages for major e-commerce campaigns.",
+        "Developed custom animations that improved user engagement by over 45%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "AI-Powered Design Platform",
+      "description": "Generative asset creation and automated scaling for e-commerce platforms, combining AI workflows with a responsive design system."
+    },
+    {
+      "title": "Global E-Learning Platform",
+      "description": "Scalable learning experience serving 1.2M+ active students worldwide, with accessible content delivery and analytics."
+    },
+    {
+      "title": "Modular ERP System",
+      "description": "Enterprise logistics and supply-chain manufacturing engine built as independently deployable modules."
+    },
+    {
+      "title": "Fintech Predictive Dashboard",
+      "description": "Real-time analytics, algorithmic trading signals and risk modeling for financial decision-makers."
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Computer Science",
+      "school": "Kigali Independent University",
+      "period": "2016 – 2018",
+      "honor": "IEEE Published Author",
+      "details": [
+        "Specialized in software architecture, distributed systems and AI applications.",
+        "Thesis on machine learning for predictive analytics and neural optimization.",
+        "Published 2 peer-reviewed papers at IEEE international conferences."
+      ]
+    },
+    {
+      "degree": "B.Sc. in Information Technology",
+      "school": "Chinese University Juba, South Sudan",
+      "period": "2013 – 2016",
+      "honor": "Top 5% Honors",
+      "details": [
+        "Rigorous foundation in systems programming, networking and database management.",
+        "Ranked in the top 5% across software engineering and algorithms coursework.",
+        "Architected a campus-wide digital library management system."
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "label": "Frontend",
+      "items": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Redux",
+        "Figma"
+      ]
+    },
+    {
+      "label": "Backend & Data",
+      "items": [
+        "Node.js",
+        "Express",
+        "GraphQL",
+        "MongoDB",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "label": "Cloud & DevOps",
+      "items": [
+        "AWS",
+        "Azure",
+        "Docker",
+        "Kubernetes"
+      ]
+    }
+  ],
+  "traits": [
+    "Leadership",
+    "Problem Solving",
+    "Agile Methodologies",
+    "Mentorship",
+    "Strategic Thinking",
+    "Cross-Team Collaboration"
+  ],
+  "services": [
+    {
+      "title": "Full-Stack Development",
+      "description": "End-to-end web applications with modern frameworks and scalable backend architectures."
+    },
+    {
+      "title": "UI/UX Architecture",
+      "description": "Intuitive, accessible interfaces that prioritize user experience and conversion."
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "Auditing and supercharging codebases for fast loads and seamless interactions."
+    },
+    {
+      "title": "Systems Architecture",
+      "description": "Microservices, API integrations and robust data models for enterprise needs."
+    }
+  ]
+}
